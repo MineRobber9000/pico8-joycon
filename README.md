@@ -6,7 +6,7 @@ to your computer.
 ## Goals ##
 
  - [X] read gamepad input and convert it to PICO-8 button presses
- - [ ] allow for 4-player multi-player (using 4 Gamepad objects)
+ - [X] allow for 4-player multi-player (using 4 Gamepad objects)
  - [ ] create mapping system to allow for different controllers
  - [ ] rename to "pico8-gamepad" (after completing previous step)
 
