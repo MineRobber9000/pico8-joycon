@@ -1,3 +1,6 @@
 theme: jekyll-theme-hacker
 title: PICO8-JoyCon
 show_downloads: true
+github:
+  zip_url: https://github.com/MineRobber9000/pico8-joycon/archive/v0.1.zip
+  tar_url: https://github.com/MineRobber9000/pico8-joycon/archive/v0.1.tar.gz
