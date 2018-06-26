@@ -25,7 +25,7 @@ function checkGP() {
 }
 
 function getBitfield(gp) {
-	if (gp==='undefined') {
+	if (gp===null) {
 		return 0; // no buttons pressed on nonexistant controller
 	}
 	var ret = 0; // reserved, bit 7
