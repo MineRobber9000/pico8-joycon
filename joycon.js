@@ -25,6 +25,9 @@ function checkGP() {
 }
 
 function getBitfield(gp) {
+	if (gp==='undefined') {
+		return 0; // no buttons pressed on nonexistant controller
+	}
 	var ret = 0; // reserved, bit 7
 	ret += (gp.buttons[13].pressed ? 2**6 : 0); // start button, bit 6
 	ret += (gp.buttons[1].pressed ? 2**5 : 0); // X (secondary button), bit 5
@@ -38,8 +41,10 @@ function getBitfield(gp) {
 
 function updateGP() {
 	log("updateGP",false);
-	var gamepad = navigator.getGamepads()[0];
-	pico8_buttons[0] = getBitfield(gamepad);
+	var gamepads = navigator.getGamepads();
+	for (i=0;i<gamepads.length;i++) {
+		pico8_buttons[i] = getBitfield(gamepads[i]);
+	}
 }
 
 var wol = window.onload;
