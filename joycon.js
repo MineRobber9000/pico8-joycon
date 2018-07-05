@@ -21,7 +21,7 @@ var joycon_mapping = {
 	"right": {
 		"type": "axis",
 		"id": 4,
-		"value": -1
+		"value": 1
 	},
 	"o": {
 		"type": "button",
